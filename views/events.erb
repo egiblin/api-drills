@@ -1,0 +1,11 @@
+<div class="small-6 small-offset-3 columns">
+  <div class="callout primary">
+    <h3>Events</h3>
+    <p><ul>
+      <% @events.each do |event| %>
+        <li><%= event["title"] %> @ <%=event["venue"]["name"] %></li>
+      <% end %>
+    </ul>
+    </p>
+  </div>
+</div>
